@@ -1,0 +1,45 @@
+
+header {
+  border-top-right-radius: $frameCornerRadius;
+  border-top-left-radius: $frameCornerRadius;
+  background-color: $colorDarkBg;
+  color: $colorBrightText;
+  display: flex;
+  flex-direction: row;
+
+  > div {
+    &:nth-child(2) {
+      padding: 5px 20px;
+    }
+
+    > img {
+      border-top-left-radius: $frameCornerRadius;
+    }
+
+    > ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin: 5px 0;
+
+      > li {
+        list-style: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 5px;
+        color: $colorBrightText;
+        font-weight: bold;
+
+        > a:link, a:visited {
+          color: $colorBrightText;
+          text-decoration: none;
+        }
+
+        > i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: $colorBg;
+}
+
+body > .wrapper {
+  background-color: $colorDarkBg;
+  border-radius: $frameCornerRadius;
+}
+
+@media (screen and min-width: $sizeDesktop) {
+  body > .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

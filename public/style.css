@@ -1,0 +1,115 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #EEEEEE;
+}
+
+body > .wrapper {
+  background-color: #212121;
+  border-radius: 15px;
+}
+
+@media (min-width: 960px) {
+  body > .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+header {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #212121;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+header > div:nth-child(2) {
+  padding: 5px 20px;
+}
+header > div > img {
+  border-top-left-radius: 15px;
+}
+header > div > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin: 5px 0;
+}
+header > div > ul > li {
+  list-style: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+header > div > ul > li > a:link, header > div > ul > li a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+header > div > ul > li > i {
+  margin-right: 10px;
+}
+
+#details {
+  display: flex;
+  flex-direction: row;
+}
+#details > main {
+  padding: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+}
+#details > aside {
+  min-width: 180px;
+  color: white;
+  padding: 20px;
+}
+#details > aside > h3 {
+  text-align: center;
+}
+#details > aside > ul {
+  list-style: none;
+  padding-left: 0;
+}
+#details > aside > ul > li {
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#details > aside > ul > li > div {
+  border-radius: 5px;
+  background-color: #FF6F36;
+  line-height: 20px;
+}
+#details > aside > ul > li > div > span {
+  color: white;
+  font-weight: 500;
+  padding-left: 10px;
+  font-size: 0.8em;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  border-bottom: dotted 1px;
+  margin-bottom: 30px;
+}
+.header > h3 {
+  display: inline;
+  background-color: white;
+  position: relative;
+  top: 10px;
+  padding: 0 10px;
+}
+
+footer {
+  background-color: #212121;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
