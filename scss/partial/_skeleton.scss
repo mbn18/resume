@@ -5,10 +5,16 @@ body {
 
 body > .wrapper {
   background-color: $colorDarkBg;
-  border-radius: $frameCornerRadius;
+  @media (screen and min-width: $widthDesktopMax) {
+    border-radius: $frameCornerRadius;
+  }
 }
 
-@media (screen and min-width: $sizeDesktop) {
+a:hover {
+  text-decoration: underline;
+}
+
+@media (screen and min-width: $widthDesktopMax) {
   body > .wrapper {
     max-width: 1024px;
     margin: 0 auto;

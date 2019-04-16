@@ -6,6 +6,10 @@ header {
   color: $colorBrightText;
   display: flex;
   flex-direction: row;
+  @media (screen and max-width: $widthMobileMax) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   > div {
     &:nth-child(2) {
@@ -13,7 +17,12 @@ header {
     }
 
     > img {
-      border-top-left-radius: $frameCornerRadius;
+      @media (screen and min-width: $widthDesktopMax) {
+        border-top-left-radius: $frameCornerRadius;
+      }
+      @media (screen and max-width: $widthMobileMax) {
+        border-bottom-right-radius: $frameCornerRadius;
+      }
     }
 
     > ul {
@@ -22,6 +31,9 @@ header {
       flex-wrap: wrap;
       padding-left: 0;
       margin: 5px 0;
+      @media (screen and max-width: $widthMobileMax) {
+        justify-content: center;
+      }
 
       > li {
         list-style: none;
@@ -31,7 +43,7 @@ header {
         color: $colorBrightText;
         font-weight: bold;
 
-        > a:link, a:visited {
+        > a, a:visited {
           color: $colorBrightText;
           text-decoration: none;
         }

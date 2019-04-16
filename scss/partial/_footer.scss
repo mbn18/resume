@@ -4,4 +4,9 @@ footer {
   border-bottom-left-radius: $frameCornerRadius;
   text-align: center;
   color: white;
+  padding-bottom: 10px;
+  a, a:visited {
+    font-weight: bold;
+    color: white;
+  }
 }

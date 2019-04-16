@@ -5,10 +5,18 @@ body {
 
 body > .wrapper {
   background-color: #212121;
-  border-radius: 15px;
+}
+@media (min-width: 1024px) {
+  body > .wrapper {
+    border-radius: 15px;
+  }
 }
 
-@media (min-width: 960px) {
+a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
   body > .wrapper {
     max-width: 1024px;
     margin: 0 auto;
@@ -22,11 +30,24 @@ header {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 header > div:nth-child(2) {
   padding: 5px 20px;
 }
-header > div > img {
-  border-top-left-radius: 15px;
+@media (min-width: 1024px) {
+  header > div > img {
+    border-top-left-radius: 15px;
+  }
+}
+@media (max-width: 768px) {
+  header > div > img {
+    border-bottom-right-radius: 15px;
+  }
 }
 header > div > ul {
   display: flex;
@@ -34,6 +55,11 @@ header > div > ul {
   flex-wrap: wrap;
   padding-left: 0;
   margin: 5px 0;
+}
+@media (max-width: 768px) {
+  header > div > ul {
+    justify-content: center;
+  }
 }
 header > div > ul > li {
   list-style: none;
@@ -43,7 +69,7 @@ header > div > ul > li {
   color: #ffffff;
   font-weight: bold;
 }
-header > div > ul > li > a:link, header > div > ul > li a:visited {
+header > div > ul > li > a, header > div > ul > li a:visited {
   color: #ffffff;
   text-decoration: none;
 }
@@ -55,11 +81,20 @@ header > div > ul > li > i {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 768px) {
+  #details {
+    flex-direction: column-reverse;
+  }
+}
 #details > main {
   padding: 20px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   background-color: white;
+}
+@media (min-width: 768px) {
+  #details > main {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
 }
 #details > aside {
   min-width: 180px;
@@ -107,11 +142,32 @@ header > div > ul > li > i {
   margin-right: 5px;
 }
 
+dl > dt {
+  position: relative;
+  top: 18px;
+  left: 30px;
+  display: inline-block;
+  background-color: white;
+  padding: 0 5px;
+  font-weight: bold;
+}
+dl > dd {
+  border: solid 1px #FF6F36;
+  border-radius: 10px;
+  padding: 20px 40px 10px;
+  margin: 10px 0;
+}
+
 footer {
   background-color: #212121;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   text-align: center;
+  color: white;
+  padding-bottom: 10px;
+}
+footer a, footer a:visited {
+  font-weight: bold;
   color: white;
 }
 
