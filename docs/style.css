@@ -76,6 +76,9 @@ header > div > ul > li > a, header > div > ul > li a:visited {
 header > div > ul > li > i {
   margin-right: 10px;
 }
+header > div > ul:nth-of-type(1) > li:first-child > a {
+  color: #FF6F36;
+}
 
 #details {
   display: flex;
@@ -169,6 +172,32 @@ footer {
 footer a, footer a:visited {
   font-weight: bold;
   color: white;
+}
+
+@media print {
+  @page {
+    size: A3 portrait;
+    margin: 40px;
+  }
+  body {
+    background-color: white;
+  }
+
+  main > div:nth-of-type(5) {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  header > div > ul:nth-of-type(1) > li:first-child {
+    display: none;
+  }
+
+  footer > p:nth-of-type(1) {
+    display: none;
+  }
+  footer:after {
+    content: "Check https://mbn18.github.io/resume for the latest version";
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
