@@ -2,7 +2,7 @@
 
 ### Dev requirements
 
-#### local server with live reload
+#### A local server with live reload
 
 `sudo npm install -g browser-sync`
 

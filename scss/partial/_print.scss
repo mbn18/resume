@@ -13,6 +13,12 @@
         page-break-before: always;
       }
     }
+
+    dl {
+      > dd {
+        padding: 20px 40px 5px;
+      }
+    }
   }
   header {
     > div {
