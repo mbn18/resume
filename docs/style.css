@@ -101,7 +101,7 @@ header > div > ul:nth-of-type(1) > li:first-child > a {
 }
 #details > aside {
   min-width: 180px;
-  color: white;
+  color: #ffffff;
   padding: 20px;
 }
 #details > aside > h3 {
@@ -166,7 +166,7 @@ footer {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   padding-bottom: 10px;
 }
 footer a, footer a:visited {
@@ -182,19 +182,40 @@ footer a, footer a:visited {
   body {
     background-color: white;
   }
-
+  body > .wrapper {
+    background-color: #ffffff;
+  }
   main > div:nth-of-type(5) {
     break-before: page;
     page-break-before: always;
   }
-  main dl > dd {
-    padding: 20px 40px 5px;
+  main dl.philosophy > dd {
+    padding: 10px 40px 10px;
   }
-
+  main dl.experience dd {
+    margin: 0;
+    padding: 10px 40px 2px;
+  }
+  #details > aside {
+    color: #212121;
+  }
+  header {
+    background-color: #ffffff;
+    color: #212121;
+  }
   header > div > ul:nth-of-type(1) > li:first-child {
     display: none;
   }
-
+  header > div > ul > li {
+    color: #212121;
+  }
+  header > div > ul > li > a, header > div > ul > li a:visited {
+    color: #212121;
+  }
+  footer {
+    background-color: #ffffff;
+    color: #212121;
+  }
   footer > p:nth-of-type(1) {
     display: none;
   }

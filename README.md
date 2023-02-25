@@ -11,6 +11,11 @@ Start service by running:
 
 Browse at: http://localhost:3000/
 
+Or using docker:
+```shell
+docker run --rm -it --name bs -p 3000:3000 -v $PWD/docs:/source ustwo/browser-sync -w
+```
+
 #### CSS compiler
 
 Download & install the dart version - https://sass-lang.com/install

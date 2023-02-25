@@ -3,7 +3,7 @@ footer {
   border-bottom-right-radius: $frameCornerRadius;
   border-bottom-left-radius: $frameCornerRadius;
   text-align: center;
-  color: white;
+  color: $colorBrightText;
   padding-bottom: 10px;
   a, a:visited {
     font-weight: bold;

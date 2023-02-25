@@ -5,6 +5,9 @@
   }
   body {
     background-color: white;
+    > .wrapper {
+      background-color: $colorBrightText;
+    }
   }
   main {
     > div {
@@ -14,22 +17,44 @@
       }
     }
 
-    dl {
+    dl.philosophy {
       > dd {
-        padding: 20px 40px 5px;
+        padding: 10px 40px 10px;
+      }
+    }
+
+    dl.experience {
+      dd {
+        margin: 0;
+        padding: 10px 40px 2px;
       }
     }
   }
+  #details {
+    > aside {
+      color: $colorDarkBg;
+    }
+  }
   header {
+    background-color: $colorBrightText;
+    color: $colorDarkBg;
     > div {
       > ul {
         &:nth-of-type(1) > li:first-child {
           display: none;
         }
+        > li {
+          color: $colorDarkBg;
+          > a, a:visited {
+            color: $colorDarkBg;
+          }
+        }
       }
     }
   }
   footer {
+    background-color: $colorBrightText;
+    color: $colorDarkBg;
     > p:nth-of-type(1) {
       display: none;
     }
