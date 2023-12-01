@@ -22,3 +22,6 @@ Download & install the dart version - https://sass-lang.com/install
 
 Start service by running:
 `make cssCompile`
+
+### Printing
+To print well, use Chrome and set the page size to A3

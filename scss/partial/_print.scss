@@ -1,6 +1,6 @@
 @media print {
   @page {
-    size: A3 portrait;
+    size: auto;
     margin: 40px;
   }
   body {
@@ -24,9 +24,12 @@
     }
 
     dl.experience {
+      dt {
+        top: 10px;
+      }
       dd {
-        margin: 0;
-        padding: 10px 40px 2px;
+        margin: 0 0 65px 0;
+        padding: 20px 40px 20px;
       }
     }
   }

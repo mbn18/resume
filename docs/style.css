@@ -176,7 +176,7 @@ footer a, footer a:visited {
 
 @media print {
   @page {
-    size: A3 portrait;
+    size: auto;
     margin: 40px;
   }
   body {
@@ -192,9 +192,12 @@ footer a, footer a:visited {
   main dl.philosophy > dd {
     padding: 10px 40px 10px;
   }
+  main dl.experience dt {
+    top: 10px;
+  }
   main dl.experience dd {
-    margin: 0;
-    padding: 10px 40px 2px;
+    margin: 0 0 65px 0;
+    padding: 20px 40px 20px;
   }
   #details > aside {
     color: #212121;
